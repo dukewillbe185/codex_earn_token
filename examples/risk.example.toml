@@ -1,0 +1,5 @@
+# This file is fictional and is not an operating configuration.
+[safety]
+paper_only = true
+allow_short = false
+max_order_fraction = 0.10
