@@ -88,8 +88,18 @@ This is proactive evolution, not self-authorized control-plane mutation:
   without explicit approval.
 - Later sessions measure whether an approved change improved the intended outcome.
 
-The private system can deliver these requests through an owner-facing messaging channel. The real
-messages, portfolio measurements, and strategy screenshots are not part of this public repository.
+The private system can deliver these requests through an owner-facing messaging channel. The
+following owner-approved historical screenshot shows that loop reaching the owner in practice. It
+is published in its original visible form because the evolution workflow is a core part of the
+project; it is an illustration, not the current public configuration.
+
+<p align="center">
+  <img src="docs/assets/proactive-evolution-telegram.jpg" alt="A Telegram PM request asking the owner to implement an approved portfolio-contract change" width="360">
+  <br>
+  <sub>A real PM request produced after the system identified a portfolio-contract bottleneck.</sub>
+</p>
+
+Other real messages, portfolio measurements, and strategy artifacts remain private.
 
 ## Guardrail principles
 
@@ -121,7 +131,8 @@ unrelated to any operating configuration.
 
 ## What remains private
 
-- Trading strategies, theses, allocations, targets, schedules, and policy memory.
+- Current strategy source files, theses, allocations, targets, schedules, and policy memory. The
+  owner-approved historical evolution screenshot above is the sole illustrative exception.
 - Real risk limits and owner-controlled configuration.
 - Broker, Telegram, notification, and deployment implementations.
 - Candidate boards, decisions, orders, fills, audit logs, reports, and account data.
@@ -180,6 +191,7 @@ All values above are fictional examples. They are unrelated to any operating con
 | `src/codex_earn_token/contracts.py` | Immutable fictional input and output contracts |
 | `src/codex_earn_token/guardrails.py` | Pure, deterministic reference validation |
 | `examples/risk.example.toml` | Non-operational example envelope |
+| `docs/assets/proactive-evolution-telegram.jpg` | Owner-approved evolution workflow example |
 | `tests/` | Fake-data acceptance and rejection tests |
 | `.github/workflows/` | CI and release smoke verification |
 | `SECURITY.md` | Responsible disclosure guidance |
